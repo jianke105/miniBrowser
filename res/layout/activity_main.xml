@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wuyongjie.minibrowser.MainActivity" >
+
+    
+	
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:focusable="true"
+        android:focusableInTouchMode="true">
+        
+        <Button 
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/btn_back"
+        	/>
+        
+        <Button 
+            android:id="@+id/btn_forward"
+            android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/btn_forward"
+        	/>
+   
+        <Button 
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/btn_refresh"
+        	/>
+        
+        <Button 
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:background="@drawable/btn_stop"
+        	/>
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_home"/>
+        
+
+        <EditText
+            android:id="@+id/url_string"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:background="@drawable/url_edt"
+            >
+        </EditText>
+        
+        <Button
+            android:id="@+id/btn_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_bookmark"
+            />
+         
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_search"
+            />
+    </LinearLayout>
+    
+    <WebView 
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        />
+
+</LinearLayout>
